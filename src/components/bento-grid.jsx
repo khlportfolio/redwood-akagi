@@ -19,9 +19,12 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   header,
+  id
 }) => {
   return (
     <div
+      data-aos={id === 1 || id === 3 || id === 5 ? 'fade-down' : 'fade-up'}
+      data-aos-duration="1000"
       className={cn(
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none bg-transparent border border-transparent justify-between flex flex-col space-y-4 overflow-hidden",
         className

@@ -4,8 +4,14 @@ import { GridBackgroundDemo } from "./components/GridBackground"
 import Logo from "./components/Logo"
 import Member from "./components/Member"
 import Portfolio from "./components/Portfolio"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
 
 const App = () => {
+  useEffect(() => {
+   AOS.init(); //You can add options as per your need inside an object
+  }, []);
   return (
     <main className="mx-4 lg:mx-10">
         <GridBackgroundDemo />

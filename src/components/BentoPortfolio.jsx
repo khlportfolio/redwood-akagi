@@ -9,6 +9,7 @@ export function BentoPortfolio() {
     <BentoGrid className="w-full mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
+          id={i}
           key={i}
           title={item.title}
           description={item.description}
