@@ -9,19 +9,14 @@ import SubThree from "../assets/subthree.svg"
 import Button from "./Button";
 import JoinUs from "./JoinUs";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export function GridBackgroundDemo() {
-  useEffect(() => {
-        AOS.init();
-      }, [])
   return (
     <div className="bg-grid h-screen w-full bg-black-dark bg-grid-white/[0.010] relative">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="z-20 pt-10">
-        <nav data-aos="fade-down" className="h-16 w-full bg-transparent sticky top-10 z-10 flex items-center justify-between">
+        <nav className="h-16 w-full bg-transparent sticky top-10 z-10 flex items-center justify-between">
             <Link to="/" className="cursor-pointer flex justify-start">
                 <img src={Logo} alt="Logo" width={270} height={270} className="max-sm:size-52"/>
             </Link>
