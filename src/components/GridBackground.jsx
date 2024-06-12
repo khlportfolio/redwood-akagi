@@ -25,12 +25,12 @@ export function GridBackgroundDemo() {
             <img src={HeroBox} alt="Hero Box" width={150} height={150} className="aspect-square" />
         </div>
             <JoinUs />
-        <img src={Hero} alt="Hero" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[450px] sm:w-[620px] h-auto max-w-none lg:w-[50vw] xl:w-[38vw]"/>
+        <img src={Hero} alt="Hero" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[430px] sm:w-[620px] h-auto max-w-none lg:w-[50vw] xl:w-[38vw]"/>
         <h1 className="text-white-1 font-strong text-[10vw] max-lg:text-[14vw] absolute left-1/2 top-[80%] transform -translate-x-1/2 -translate-y-[80%] tracking-wider">REDWOOD</h1>
 
         <div className="flex flex-col gap-3 absolute left-1/2 top-[96%] transform -translate-x-1/2 -translate-y-[96%]">
             <h2 className="text-[20px] text-white-1 font-normal font-helvetica text-center">Subdivision:</h2>
-            <div className="flex items-center justify-center gap-8">
+            <div className="flex items-center justify-center gap-8 max-sm:gap-1">
                 <img src={SubOne} alt="Sub division 1" width={170} height={71} className="w-[100px] md:w-[130px]"/>
                 <img src={SubTwo} alt="Sub division 2" width={300} height={86} className="w-[200px] md:w-[260px] "/>
                 <img src={SubThree} alt="Sub division" width={130} height={86} className="w-[80px] md:w-[90px] "/>
