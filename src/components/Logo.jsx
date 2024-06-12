@@ -30,7 +30,7 @@ const Logo = () => {
   }
   return (
     <div className='py-20 lg:px-12 flex flex-col gap-20'>
-        <h1 className="font-semibold font-helvetica text-white-1 text-end max-sm:text-[35px] max-lg:text-[40px] max-lg:text-center lg:text-[45px] xl:text-[60px]"><span className="text-red-1">RED</span>WOOD LOGO</h1>
+        <h1 data-aos="fade-down-right" className="font-semibold font-helvetica text-white-1 text-end max-sm:text-[35px] max-lg:text-[40px] max-lg:text-center lg:text-[45px] xl:text-[60px]"><span className="text-red-1">RED</span>WOOD LOGO</h1>
         <div className='flex items-center gap-4 max-sm:grid max-sm:grid-cols-2'>
           <Button value="Minimalistic" onClick={handleMinimalistic}/>
           <Button value="Modern" onClick={handleModern}/>

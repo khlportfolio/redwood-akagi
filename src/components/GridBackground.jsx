@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg"
 import Hero from "../assets/hero.svg"
@@ -8,14 +8,20 @@ import SubTwo from "../assets/subtwo.svg"
 import SubThree from "../assets/subthree.svg"
 import Button from "./Button";
 import JoinUs from "./JoinUs";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export function GridBackgroundDemo() {
+  useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <div className="bg-grid h-screen w-full bg-black-dark bg-grid-white/[0.010] relative">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="z-20 pt-10">
-        <nav className="h-16 w-full bg-transparent sticky top-10 z-10 flex items-center justify-between">
+        <nav data-aos="fade-down" className="h-16 w-full bg-transparent sticky top-10 z-10 flex items-center justify-between">
             <Link to="/" className="cursor-pointer flex justify-start">
                 <img src={Logo} alt="Logo" width={270} height={270} className="max-sm:size-52"/>
             </Link>
@@ -26,7 +32,8 @@ export function GridBackgroundDemo() {
         </div>
             <JoinUs />
         <img src={Hero} alt="Hero" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[430px] sm:w-[620px] h-auto max-w-none lg:w-[50vw] xl:w-[38vw]"/>
-        <h1 className="text-white-1 font-strong text-[10vw] max-lg:text-[14vw] absolute left-1/2 top-[80%] transform -translate-x-1/2 -translate-y-[80%] tracking-wider">REDWOOD</h1>
+        {/* <h1 className="text-white-1 font-strong text-[10vw] max-lg:text-[14vw] absolute left-1/2 top-[80%] transform -translate-x-1/2 -translate-y-[80%] tracking-wider">REDWOOD</h1> */}
+        <TextGenerateEffect words="REDWOOD" />
 
         <div className="flex flex-col gap-3 absolute left-1/2 top-[96%] transform -translate-x-1/2 -translate-y-[96%]">
             <h2 className="text-[20px] text-white-1 font-normal font-helvetica text-center">Subdivision:</h2>
