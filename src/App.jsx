@@ -13,7 +13,7 @@ const App = () => {
    AOS.init(); //You can add options as per your need inside an object
   }, []);
   return (
-    <main className="mx-4 lg:mx-10">
+    <main className="w-full px-4 lg:px-10">
         <GridBackgroundDemo />
         <About />
         <Portfolio />

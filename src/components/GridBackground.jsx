@@ -26,7 +26,7 @@ export function GridBackgroundDemo() {
             <img src={HeroBox} alt="Hero Box" width={150} height={150} className="aspect-square" />
         </div>
             <JoinUs />
-        <img src={Hero} alt="Hero" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[430px] sm:w-[620px] h-auto max-w-none lg:w-[50vw] xl:w-[38vw]"/>
+        <img src={Hero} alt="Hero" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[620px] h-auto max-w-none lg:w-[50vw] xl:w-[38vw]"/>
         {/* <h1 className="text-white-1 font-strong text-[10vw] max-lg:text-[14vw] absolute left-1/2 top-[80%] transform -translate-x-1/2 -translate-y-[80%] tracking-wider">REDWOOD</h1> */}
         <TextGenerateEffect words="REDWOOD" />
 
