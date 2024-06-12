@@ -1,6 +1,9 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./bento-grid";
-import PortoOne from "../assets/porto1.svg"
+import ArtOne from "../assets/art1.jpg"
+import ArtTwo from "../assets/art2.jpg"
+import ArtThree from "../assets/art3.jpeg"
+import ArtFour from "../assets/art4.jpeg"
 import PortoTwo from "../assets/porto2.svg"
 import PortoThree from "../assets/porto3.svg"
 
@@ -24,18 +27,18 @@ export function BentoPortfolio() {
 
 const items = [
   {
-    header: PortoOne,
+    header: ArtOne,
   },
   {
-    header: PortoTwo,
+    header: ArtTwo,
   },
   {
     header: PortoThree,
   },
   {
-    header: PortoOne,
+    header: ArtThree,
   },
   {
-    header: PortoOne,
+    header: ArtFour,
   },
 ];
