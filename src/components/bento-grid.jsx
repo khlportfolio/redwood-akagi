@@ -26,7 +26,7 @@ export const BentoGridItem = ({
       data-aos={id === 1 || id === 3 || id === 5 ? 'fade-down' : 'fade-up'}
       data-aos-duration="1000"
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none bg-transparent border border-transparent justify-between flex flex-col space-y-4 overflow-hidden max-sm:size-96 max-sm:mx-auto",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none bg-transparent border border-transparent justify-between flex flex-col space-y-4 overflow-hidden max-sm:size-72 max-sm:mx-auto",
         className
       )}
     >
